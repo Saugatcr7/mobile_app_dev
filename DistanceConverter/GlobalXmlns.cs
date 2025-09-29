@@ -1,0 +1,2 @@
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "DistanceConverter")]
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/dotnet/maui/global", "DistanceConverter.Pages")]
