@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DateNight.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DateNight.Views"
+    Title="DateNight">
+
+    <TabBar Shell.BackgroundColor="Beige">
+
+        <Tab Title="Coffee">
+            <Tab.Icon>
+                <FontImageSource Glyph="☕" Size="40" Color="Brown" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:Coffee}" Route="Coffee" />
+        </Tab>
+
+        <Tab Title="Dinner">
+            <Tab.Icon>
+                <FontImageSource Glyph="🍽️" Size="35" Color="DarkRed" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:Dinner}" Route="Dinner" />
+        </Tab>
+
+        <Tab Title="Movie">
+            <Tab.Icon>
+                <FontImageSource Glyph="🎬" Size="30" Color="DarkBlue" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:Movie}" Route="Movie" />
+        </Tab>
+
+        <Tab Title="Money">
+            <Tab.Icon>
+                <FontImageSource Glyph="💰" Size="30" Color="Green" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:Money}" Route="Money" />
+        </Tab>
+
+    </TabBar>
+</Shell>

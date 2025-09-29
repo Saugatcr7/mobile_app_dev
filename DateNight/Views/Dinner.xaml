@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateNight.Views.Dinner" Title="Dinner Page">
+    <ContentPage.Content>
+        <StackLayout Margin="0,50,0,0">
+            <Image Source="https://wallpapercave.com/wp/wp2153576.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   WidthRequest="200"/>
+
+            <Border Stroke="Black" StrokeThickness="1" Margin="20,0"/>
+
+            <Entry x:Name="txtDinner" Keyboard="Numeric" Placeholder="Enter Cost of Money"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateNight.Views.Money" Title="Money Page">
+    <ContentPage.Content>
+        <StackLayout Margin="0,50,0,0">
+            <Image Source="https://thumbs.dreamstime.com/z/packs-dollars-background-lots-cash-money-d-48517704.jpg"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   WidthRequest="200"/>
+           <Label Margin="20,0" x:Name="lblMoney" Text="$100" FontSize="Title" HorizontalOptions="Center"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

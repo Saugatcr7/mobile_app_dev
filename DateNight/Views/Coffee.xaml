@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateNight.Views.Coffee" Title="Coffee Page">
+    <ContentPage.Content>
+        <StackLayout Margin="0,50,0,0">
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG"
+                   Margin="0,50,0,30"
+                   Aspect="AspectFit"
+                   HeightRequest="200"
+                   WidthRequest="200"/>
+            <Border Stroke="Black" StrokeThickness="1" Margin="20,0"/>
+            <Entry x:Name="txtCoffee" Keyboard="Numeric" Placeholder="Enter Cost of Money"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
