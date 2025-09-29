@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tip_Calculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center"
+            Padding="30,0"
+            Spacing="25">
+           <Label Text="Tip Calculator" FontSize="40" FontAttributes="Bold" />
+           <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Bill Amount" FontAttributes="Bold" FontSize="20"/>
+           <Entry Width="30" Placeholder="Enter the amount" x:Name="amount"/>
+           <Label VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" Text="Service Quality:" FontSize="18"/>
+           <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+               <Button Clicked="Button_OnClicked_15" Text="Calculate Tip" BackgroundColor="Blue"/>
+               <Label Text="15%" FontFamily="MyFontBold" FontSize="40"/>
+           </HorizontalStackLayout>
+
+           <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+               <Button Clicked="Button_OnClicked_20" Text="Calculate Tip" BackgroundColor="Blue"/>
+               <Label  Text="20%" FontFamily="MyFontBold" FontSize="40"/>
+           </HorizontalStackLayout>
+           
+           <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+               <Button Clicked="Button_OnClicked_25" Text="Calculate Tip" BackgroundColor="Blue"/>
+               <Label Text="25%" FontFamily="MyFontBold" FontSize="40"/>
+           </HorizontalStackLayout>
+           
+           <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+               <Label x:Name="tip" FontFamily="MyFontBold"  FontSize="20" />
+               <Label x:Name="total" FontFamily="MyFontBold" FontSize="20" />
+           </HorizontalStackLayout>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
